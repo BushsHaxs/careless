@@ -1446,10 +1446,10 @@ class PlayState extends MusicBeatState
 
 		// Song duration in a float, useful for the time left feature
 		songLength = FlxG.sound.music.length;
-
+                #if windows
 		if (luaModchart != null)
-			luaModchart.executeState('songStart',[]);
-
+		luaModchart.executeState('songStart',[]);
+                #end 
 		if (FlxG.save.data.songPosition)
 		{
 			remove(songPosBG);
