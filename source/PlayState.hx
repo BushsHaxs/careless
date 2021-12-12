@@ -13,9 +13,7 @@ import flixel.graphics.FlxGraphic;
 import openfl.utils.AssetManifest;
 import openfl.utils.AssetLibrary;
 import flixel.system.FlxAssets;
-
 import webm.WebmPlayer;
-
 import lime.app.Application;
 import lime.media.AudioContext;
 import lime.media.AudioManager;
@@ -1295,7 +1293,7 @@ class PlayState extends MusicBeatState
 
 	var luaWiggles:Array<WiggleEffect> = [];
 
-	#if windows
+	#if desktop
 	public static var luaModchart:ModchartState = null;
 	#end
 
@@ -1307,7 +1305,7 @@ class PlayState extends MusicBeatState
 		generateStaticArrows(1);
 
 
-		#if windows
+		#if desktop
 		if (executeModchart)
 		{
 			luaModchart = ModchartState.createModchartState();
