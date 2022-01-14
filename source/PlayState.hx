@@ -253,7 +253,7 @@ class PlayState extends MusicBeatState
 				case 'philly-nice': songLowercase = 'philly';
 			}
 		
-		#if windows
+		#if cpp 
 		executeModchart = FileSystem.exists(Paths.lua(songLowercase  + "/modchart"));
 		#end
 		#if !cpp
