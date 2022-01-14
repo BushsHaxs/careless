@@ -55,8 +55,13 @@ import haxe.Json;
 import lime.utils.Assets;
 import openfl.display.BlendMode;
 import openfl.display.StageQuality;
-import openfl.filters.ShaderFilter;
-
+import openfl.filters.ShaderFilter; 
+#if cpp
+import llua.Convert;
+import llua.Lua;
+import llua.State;
+import llua.LuaL; 
+#end 
 #if desktop
 import Discord.DiscordClient;
 #end
