@@ -45,7 +45,7 @@ jobs:
           haxelib git discord_rpc https://github.com/Aidan63/linc_discord-rpc
           haxelib git flixel https://github.com/BushsHaxs/flixel
           haxelib install hxcpp-debug-server
-          haxelib git openfl-webm https://github.com/BushsHaxs/haxe-openfl-webm
+          haxelib install openfl-webm
           haxelib git extension-webm https://github.com/KadeDev/extension-webm
           haxelib git polymod https://github.com/ThatDisabledKid/polymod
           haxelib install newgrounds
